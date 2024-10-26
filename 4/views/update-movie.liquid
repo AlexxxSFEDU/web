@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Movie</title>
+</head>
+<body>
+  <h1>Update Movie</h1>
+  <form method="post" action="/update-movie/{{ movie.id }}">
+    <input type="text" name="title" required value="{{ movie.title }}">
+    <button type="submit">Update Movie</button>
+  </form>
+</body>
+</html>

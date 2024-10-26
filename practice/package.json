@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "liquid": "^5.1.1",
+    "liquidjs": "^10.13.0",
+    "nodemon": "^3.1.0"
+  },
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "practice 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Popov",
+  "license": "ISC"
+}

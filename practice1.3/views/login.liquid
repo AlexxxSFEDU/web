@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Форма входа</title>
+</head>
+<body>
+  <h1>Форма входа</h1>
+  {% if message %}
+    <p style="color: red;">{{ message }}</p>
+  {% endif %}
+  <form action="/login" method="post">
+    <label for="username">Имя пользователя:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <button type="submit">Войти</button>
+  </form>
+</body>
+</html>

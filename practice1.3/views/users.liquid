@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Список пользователей</title>
+</head>
+<body>
+  <h1>Список пользователей</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Имя пользователя</th>
+        <th>Роль</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for user in users %}
+      <tr>
+        <td>{{ user.username }}</td>
+        <td>{{ user.role }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <a href="/logout">Выйти</a>
+</body>
+</html>

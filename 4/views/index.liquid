@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Catalog</title>
+</head>
+<body>
+  <h1>Movie Catalog</h1>
+  <a href="/add-movie">Add New Movie</a>
+  <ul>
+    {% for movie in movies %}
+      <li>{{ movie.title }} - <a href="/update-movie/{{ movie.id }}">Edit</a> - <form method="post" action="/delete-movie/{{ movie.id }}" style="display:inline;"><button type="submit">Delete</button></form></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
